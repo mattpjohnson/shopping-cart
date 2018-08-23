@@ -1,0 +1,13 @@
+.mjs-button {
+    background-color: #2c78e5;
+    box-shadow: 4px 4px #000;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 0;
+    padding: 5px;
+}
+
+.mjs-button--secondary {
+    background-color: #9901fd;
+}

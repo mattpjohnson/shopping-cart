@@ -1,0 +1,11 @@
+.mjs-baseview {
+    margin: 20px;
+}
+
+.mjs-baseview__title {
+    padding: 2px;
+}
+
+.mjs-baseview__body {
+    padding: 10px;
+}

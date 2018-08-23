@@ -1,0 +1,19 @@
+.mjs-border-top--bold,
+.mjs-border--bold {
+  border-top: 3px solid #000;
+}
+
+.mjs-border-left--bold,
+.mjs-border--bold {
+  border-left: 3px solid #000;
+}
+
+.mjs-border-bottom--bold,
+.mjs-border--bold {
+  border-bottom: 3px solid #000;
+}
+
+.mjs-border-right--bold,
+.mjs-border--bold {
+  border-right: 3px solid #000;
+}
