@@ -16,7 +16,7 @@ class App extends Component {
     this.addProductToBasket = this.addProductToBasket.bind(this);
     this.updateProductSkuCount = this.updateProductSkuCount.bind(this);
 
-    const products = await fetch('http://localhost:9001/products').then(response => response.json());
+    const products = await fetch('https://BasketNodeServer--mattpjohnson.repl.co/products').then(response => response.json());
     const productFromSku = products.reduce((lookup, product) => ({ ...lookup, [product.sku]: product }), {});
     this.setState({ products, productFromSku });
   }
@@ -44,7 +44,7 @@ class App extends Component {
     return (
       <Switch>
         <Route path="/checkout" component={() => <BasketCheckout basket={this.state.basket} productFromSku={this.state.productFromSku} updateProductSkuCount={this.updateProductSkuCount} />} />
-  
+
         <Route path="" component={() => <ProductList basket={this.state.basket} products={this.state.products} addProductToBasket={this.addProductToBasket} />} />
       </Switch>
     );
